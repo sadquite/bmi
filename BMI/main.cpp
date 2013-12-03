@@ -2,11 +2,8 @@
 
 using namespace std;
 
-double BMI(double weight,double high)
-{
-    high=high/100;
-    return weight/(high*high);
-}
+double BMI(double,double)
+
 
 int main()
 {
@@ -17,4 +14,10 @@ int main()
     cin>>weight;
     cout<<"BMI:"<<BMI(weight,high);
     return 0;
+}
+
+double BMI(double weight,double high)
+{
+    high=high/100;
+    return weight/(high*high);
 }
